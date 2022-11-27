@@ -11,3 +11,5 @@
 .DS_Store
 
 .idea
+
+/src/lib/__snapshots__
