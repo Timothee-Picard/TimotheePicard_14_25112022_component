@@ -21,7 +21,7 @@ const App = () => {
                    hide={() => setIsShowing(false)}
                    type="error"
                    title="Ma modal"
-                   message="Contact enregistré avec succés"
+                   messages={["Contact enregistré avec succés","message 2"]}
             >
                 <a href="#" className="modal-action">Accueil</a>
                 <button className="modal-action success">Retour</button>

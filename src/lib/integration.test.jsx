@@ -20,13 +20,13 @@ describe('Integration test', () => {
 
     test('Expected message is displayed', () => {
         const message = 'Une erreur est survenue'
-        render(<Modal isShowing={true} message={message} />)
+        render(<Modal isShowing={true} messages={[message]} />)
         expect(screen.queryByText(`${message}`))
     })
 
     test('Expected message is not displayed', () => {
         const message = 'Une erreur est survenue'
-        render(<Modal isShowing={false} message={message} />)
+        render(<Modal isShowing={false} messages={message} />)
         expect(screen.queryByText(`${message}`)).toBeNull()
     })
 

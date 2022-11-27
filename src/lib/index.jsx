@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Modal({ isShowing, hide, type, title, message, ...props }) {
+export default function Modal({ isShowing, hide, type, title, messages, ...props }) {
     return isShowing? (
         <>
             <div className="modal-container">
@@ -9,7 +9,9 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
                         <button className="modal-close" onClick={hide} tabIndex="1"></button>
                     </div>
                     <div className="modal-content">
-                        <p>{message}</p>
+                        {messages && messages.map((message) => (
+                            <p>{message}</p>
+                        ))}
                     </div>
                     <div className="modal-actions">
                         {props.children}
