@@ -10,7 +10,7 @@ export default function Modal({ isShowing, hide, type, title, messages, ...props
                     </div>
                     <div className="modal-content">
                         {messages && messages.map((message) => (
-                            <p>{message}</p>
+                            <p key={message}>{message}</p>
                         ))}
                     </div>
                     <div className="modal-actions">
