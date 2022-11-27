@@ -35,6 +35,7 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
                 background-color: white;
                 padding: 2em;
                 width: clamp(220px, 75%, 600px);
+                font-family: sans-serif;
               }
 
               .modal-success {
@@ -105,7 +106,8 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
                 background: none;
                 border: none;
                 text-decoration: none;
-                font-size: 1em;
+                font-size: 0.9em;
+                font-weight: 600;
                 padding: 0.4em 1em;
                 border-radius: 4px;
                 border: 2px solid black;
