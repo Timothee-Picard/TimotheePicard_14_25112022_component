@@ -108,6 +108,7 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
                 text-decoration: none;
                 font-size: 0.9em;
                 font-weight: 600;
+                text-transform: uppercase;
                 padding: 0.4em 1em;
                 border-radius: 4px;
                 border: 2px solid black;
