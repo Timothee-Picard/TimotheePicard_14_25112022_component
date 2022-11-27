@@ -95,6 +95,7 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
 
               .modal-actions {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: flex-end;
                 gap: 1em;
               }
