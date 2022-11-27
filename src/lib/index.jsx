@@ -108,6 +108,7 @@ export default function Modal({ isShowing, hide, type, title, message, ...props 
                 padding: 0.4em 1em;
                 border-radius: 4px;
                 border: 2px solid black;
+                cursor: pointer;
               }
 
               .modal-action.success {
