@@ -17,9 +17,9 @@ In a React app, use the Modal components:
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | isShowing | Type: `Boolean` State will display/hide modal                                                                                                                                         |
 | hide      | Type: `Function` Function that sets the state to false                                                                                                                                |
-| type      | Type: `String&vert;null` Can be success, warning or error                                                                                                                             |
-| title     | Type: `String|null`  Set the title of modal                                                                                                                                      |
-| messages  | Type: `Array.<String>&vert;null ` Displays children at the bottom of the modal. <br />Can add class modal-action for button design and class success, warning or error for error type |
+| type      | Type: `String or null` Can be success, warning or error                                                                                                                             |
+| title     | Type: `String or null`  Set the title of modal                                                                                                                                      |
+| messages  | Type: `Array.<String> or null ` Displays children at the bottom of the modal. <br />Can add class modal-action for button design and class success, warning or error for error type |
 
 ##  Children
 
