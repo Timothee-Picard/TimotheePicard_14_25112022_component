@@ -24,7 +24,7 @@ const App = () => {
                    messages={["Contact enregistré avec succés","message 2"]}
             >
                 <a href="#" className="modal-action">Accueil</a>
-                <button className="modal-action success">Retour</button>
+                <button className="modal-action success" onClick={() => setIsShowing(false)}>Retour</button>
             </Modal>
         </>
     )

@@ -1,5 +1,18 @@
 import React from 'react'
-export default function Modal({ isShowing, hide, type, title, messages, ...props }) {
+import PropTypes from "prop-types";
+
+/**
+ *
+ * @param {Boolean} isShowing State will display/hide modal
+ * @param {Function} hide Function that sets the state to false
+ * @param {String|null} type Can be success, warning or error
+ * @param {String|null} title Set the title of modal
+ * @param {Array.<String>|null} messages Set the message of modal
+ * @param {JSX.Element|null} children Displays children at the bottom of the modal
+ * Can add class modal-action for button design and class success, warning or error for error type
+ * @returns {JSX.Element|null}
+ */
+export default function Modal({ isShowing, hide, type, title, messages, children }) {
     return isShowing? (
         <>
             <div className="modal-container">
@@ -14,7 +27,7 @@ export default function Modal({ isShowing, hide, type, title, messages, ...props
                         ))}
                     </div>
                     <div className="modal-actions">
-                        {props.children}
+                        {children}
                     </div>
                 </div>
             </div>
@@ -149,4 +162,12 @@ export default function Modal({ isShowing, hide, type, title, messages, ...props
             </style>
         </>
     ) : null;
+}
+
+Modal.prototype = {
+    isShowing:  PropTypes.bool,
+    hide:  PropTypes.func,
+    type:  PropTypes.string,
+    title:  PropTypes.string,
+    messages:  PropTypes.string,
 }
