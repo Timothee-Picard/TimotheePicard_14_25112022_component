@@ -1,6 +1,6 @@
 # Component
 
-![logo](./public/logo.jpg)
+![logo](./public/logo.jpg)(https://github.com/Timothee-Picard/TimotheePicard_14_25112022)
 
 ## Install
 
